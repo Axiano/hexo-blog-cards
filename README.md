@@ -1,7 +1,8 @@
 # 关东煮小熊仔
 <center><h1>Cards | Theme for Hexo</h1></center>
 
-![](https://theme-cards.ichr.me/assets/img/info.png)
+![](https://z3.ax1x.com/2021/04/05/cQkXTS.png)
+![](https://z3.ax1x.com/2021/04/05/cQkOw8.png)
 
 >   Simple · Swift · Powerful
 >
@@ -49,4 +50,3 @@ hexo s --debug
 
 Special thanks to [Spencer](https://github.com/spencerwooo) for providing style support for **Theme Cards**.
 
-![](https://theme-cards.ichr.me/assets/img/coverpic.png)
