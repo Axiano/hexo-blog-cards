@@ -1,3 +1,4 @@
+# 关东煮小熊仔
 <center><h1>Cards | Theme for Hexo</h1></center>
 
 ![](https://theme-cards.ichr.me/assets/img/info.png)
