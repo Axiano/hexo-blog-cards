@@ -1,0 +1,531 @@
+# ---------------------------------------------------------------
+# ⚠ 注意！
+# ---------------------------------------------------------------
+# Hexo 有两个配置文件，分别为位于站点根目录的「站点配置文件」和此处的「主题配置文件」
+# 修改时注意对应配置文件，部分主题配置文件的内容可能需要复制到站点配置文件才能生效
+
+
+
+# ---------------------------------------------------------------
+# <head> 标签配置
+# ---------------------------------------------------------------
+
+head: 
+  
+  # 网站图标
+  favicon:
+    ico: 
+    small: /img/ico.png
+    medium: /img/ico.png
+    apple_touch_icon: /img/ico.png
+    safari_pinned_tab: /img/ico.png
+  
+  # 社交分享链接
+  opengraph: 
+    enable: true
+    type: 
+    twitter_card: summary_large_image
+    twitter_id: 
+    twitter_site: 
+    image: page.thumbnail
+    fb_admins: 
+    fb_app_id: 
+
+  # 自定义 head
+  custom_head: 
+    # - ''
+    # - ''
+
+
+
+# ---------------------------------------------------------------
+# 导航栏/封面配置
+# ---------------------------------------------------------------
+
+# 顶部导航栏设置
+navbar: 
+
+  # 左侧名称显示
+  sitename: 阿贤的小破站
+  
+  # 右侧站内导航链接
+  menu: 
+    - name: 首页
+      url: /
+    - name: 标签
+      url: /tags/
+    - name: 归档
+      url: /archives/
+    - name: 友链
+      url: /friends/
+    - name: Page
+      url: /page/
+    - name: 时光机
+      url: /artitalk/
+  # 导航栏永远显示在屏幕顶端
+  # 仅当屏幕宽度不小于 1080 px 时生效
+  sticky: false
+
+# 封面 cover 设置
+cover: 
+
+  # 显示在最上方 cover 处的站点名称
+  sitename: 阿贤哦😎
+
+  # 若 avatar 配置不为空，则优先使用 avatar 覆盖 sitename
+  avatar: 
+  
+  # sitename/avatar 下方的一句话介绍
+  description: 你好，欢迎来到我的小破站。😘
+
+
+
+# ---------------------------------------------------------------
+# 样式自定义
+# ---------------------------------------------------------------
+
+style: 
+
+  # 颜色配置
+  color: 
+    main_color: '#2e3033'
+
+  # 弧度设置
+  radius: 
+    main_radius: 30px
+    
+  # 间距设置
+  space: 
+    main_space: 2rem
+    sm_space: 1.5rem  # 当屏幕宽度小于 650px 时候启用
+
+
+  # 默认代码高亮
+  highlight: 
+
+    # 默认代码高亮主题
+    default: 
+
+    # 暗色代码高亮主题
+    darkmode: 
+
+  # highlight.js 代码高亮
+  hljs: 
+
+    # 默认代码高亮主题
+    default: 
+
+    # 暗色代码高亮主题
+    darkmode: 
+
+  # prismjs 代码高亮
+  prismjs: 
+
+    # 默认代码高亮主题
+    default: 
+
+    # 暗色代码高亮主题
+    darkmode: 
+
+
+
+# ---------------------------------------------------------------
+# meta 库
+# ---------------------------------------------------------------
+
+meta:
+
+  # 默认文章标题
+  title: 'no title'
+  
+  # 默认文章作者（可在front-matter中覆盖）
+  author:
+    name: 阿贤
+    url: https://chralpha.com
+  
+  # 文章创建日期
+  date:
+    title: ''
+    format: 'YYYY-MM-DD' # 日期格式 http://momentjs.com/docs/
+  
+  # 文章更新日期
+  updated:
+    title: ''
+    format: 'YYYY-MM-DD' # 日期格式 http://momentjs.com/docs/
+
+  # 文章缩略图
+  thumbnail: 
+    enable: true
+    default:   # 默认缩略图，当页面 `thumbnail` 字段为空时 fallback 至此参数
+
+  # 文章过时提醒
+  expire: 
+    enable: false
+    duration: 120  # 超过此天数则显示过期提醒
+
+  # 文章自动摘要
+  auto_excerpt: 
+    enable: false
+    length: 150
+
+  # 文章目录
+  toc: 
+    enable: false
+    list_number: false
+
+  # 文章版权声明
+  copyright: 
+    enable: false
+    
+    # 在作者声明和永久链接之后，可以多行，支持 markdown
+    custom_text:
+      # - ''
+      # - ''
+
+
+
+# ---------------------------------------------------------------
+# 评论系统
+# ---------------------------------------------------------------
+
+comments: 
+  use:   # disqus | disqusjs | valine | minivaline | gitalk | gitment | levere | changyan | wildfire
+
+  # Disqus
+  disqus:  
+    shortname: 
+
+  # DisqusJS  
+  disqusjs: 
+    shortname: 
+    siteName: 
+    api: 
+    apikey: 
+    admin: ''
+    nesting: 2
+
+  # Valine
+  valine: 
+    appId: 
+    appKey:
+    placeholder: 
+    path: 
+    avatar: 
+    meta: [nick, mail, link]
+    pageSize: 
+    lang: 
+    visitor: 
+    highlight: 
+    avatarForce: 
+    recordIP: 
+    serverURLs: 
+    enableQQ: 
+    requiredFields: [nick, mail]
+    emojiCDN: 
+    emojiMaps: 
+
+  # MiniValine
+  minivaline:  
+    appId: 
+    appKey: 
+    mode: 
+    placeholder: 
+    pathname: 
+    adminEmailMd5: 
+    master: 
+    friends: 
+    tagMeta: 
+    math: 
+    md: 
+    lang: 
+    emoticonUrl:
+    NoRecordIP: 
+    maxNest: 
+    pageSize: 
+    enableQQ: 
+    visitor: 
+    serverURLs: 
+
+  # Gitalk
+  gitalk:
+    repo:
+    owner:
+    clientID:
+    clientSecret:
+
+  # Gitment
+  gitment:
+    repo:
+    owner:
+    client_id:
+    client_secret:
+
+  # Artalk
+  artalk: 
+    serverUrl: 
+    placeholder: 
+    noComment: 
+    defaultAvatar: 
+    pageKey: 
+    gravatar: 
+      cdn: 
+    readMore: 
+      pageSize: 
+      autoLoad: 
+    emoticons: 
+  
+  # Livere 来比力
+  livere: 
+    livere_uid:
+
+  # 畅言
+  changyan: 
+    appid:
+    conf:
+    thread_key_type: path # id | path，单独定义时候用 “id”
+
+  # Wildfire
+  wildfire: 
+    database_provider: firebase # firebase | wilddog
+    wilddog_site_id:
+    firebase_api_key:
+    firebase_auth_domain:
+    firebase_database_url:
+    firebase_project_id:
+    firebase_storage_bucket:
+    firebase_messaging_sender_id:
+    theme: light # light | dark
+    locale: en
+    
+  # Twikoo
+  twikoo:
+    envId: # 你的 CloudBase 环境 ID
+
+
+
+# ---------------------------------------------------------------
+# 统计服务
+# ---------------------------------------------------------------
+
+analytics:
+  google_site_id:
+  gtags_site_id:
+  baidu_site_id: 
+  cnzz_site_id: 
+  cloudflare_site_id: 
+
+
+
+# ---------------------------------------------------------------
+# 网站页脚
+# ---------------------------------------------------------------
+
+footer:
+  
+  # 设置站点起始时间，用于底部 copyright 显示
+  # 例如：将此设为 `2018`，那么页脚就会显示 '© 2018 - 2020'（2020 为最后一次页面生成时间）
+  # 如果将此项留空，则单独显示 '© 2020'（2020 为最后一次页面生成时间）
+  # 如果你不想显示任何内容，请将此项设为 `false`
+  copyright_since: 
+
+  # 网站计数
+  statistics: 
+
+    # 选择 LeanCloud/busuanzi 为网站计数。如果你完全不想启用，将 `use` 项留空即可
+    use:   # leancloud | busuanzi
+
+    # 如果选择使用 LeanCloud，则需完善下面的配置项
+    leancloud: 
+      appId: 
+      appKey: 
+      serverURL:   # REST API 服务器地址，LeanCloud 国际版不填
+
+    # 全站 UV（Unique Viewers）
+    site_uv:
+      enable: true
+      before_text: '' # 展示在数据前的内容，支持 HTML
+      after_text: Viewers  # 展示在数据后的内容，支持 HTML
+      divider: '&nbsp;&nbsp;&nbsp;|' # 分隔符，HTML 语法支持
+    
+    # 全站 PV（Page Views）
+    site_pv:
+      enable: true
+      before_text: ''  # 展示在数据前的内容，支持 HTML
+      after_text: Views  # 展示在数据后的内容，支持 HTML
+      divider: ''  # 分隔符，HTML 语法支持
+    
+    # 页面 PV
+    page_pv:
+      enable: true
+      before_text: ''
+      after_text: Views 
+
+  # 自定义页脚，支持 markdown
+  custom_text: 
+    # - ''
+    # - ''
+
+
+
+# ---------------------------------------------------------------
+# 优化/功能 插件
+# ---------------------------------------------------------------
+
+# 图片懒加载插件
+lazyload:
+  enable: false
+  loadingImage: 
+
+# 站内搜索插件
+search:
+  enable: false
+  path: search.json
+  field: All  # Page | Post | All
+
+# note 标签插件
+note: false
+
+# fold 内容折叠插件
+fold: 
+  enable: true
+  summary:   # 默认摘要
+  motion: 
+
+# 图片点击放大插件
+fancybox: 
+  enable: false
+  auto: false
+  
+# 返回顶部
+back_to_top: true
+
+# 深色模式
+darkmode: true
+
+
+
+# ---------------------------------------------------------------
+# CDN for vendors
+# ---------------------------------------------------------------
+
+# Vendors
+# 某一项留空则调用 默认/本地 文件
+vendors:
+
+  # main style css
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/css/style/main.min.css
+  # Version: 1.2
+  # 如果你有自定义样式，请务必将此项修改为自己的 CDN 地址，或者单纯留空
+  style: 
+
+  # darkmode
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/css/style/dark.min.css
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/js/darkmode.min.js
+  # Version 1.2
+  darkmode: 
+    css: 
+    js: 
+  
+  # code highlight css
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/css/highlight/
+  # Version: 1.2
+  highlight: 
+
+  # highlight.js theme
+  # https://cdn.jsdelivr.net/npm/highlight.js@10.1.2/styles/
+  # Version: 10.1.2
+  hljs: 
+
+  # prism.js theme
+  # https://cdn.jsdelivr.net/npm/prismjs@1.21.0/themes/
+  # Version: 1.21.0
+  prism: 
+
+  # tag-plugin note css
+  # https://github.com/ChrAlpha/hexo-theme-cards
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/css/style/note.min.css
+  # Version 1.2
+  note: 
+
+  # Lazyload js
+  # https://github.com/verlok/lazyload
+  # Version: 17.1.2
+  lazyload: 
+  
+  # back_to_top button
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/js/b2t.min.js
+  # Version 1.2
+  back_to_top: 
+
+  # local search plugin
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/js/local-search.min.js
+  # Version 1.2
+  local_search: 
+  
+  # Valine comments system
+  # https://github.com/xcss/Valine/
+  # Version: 1.4.14
+  valine: 
+
+  # MiniValine
+  # https://github.com/MiniValine/MiniValine
+  # Version 2.7.5
+  minivaline: 
+
+  # Artalk
+  # https://github.com/qwqcode/Artalk
+  # Version 1.0.6
+  artalk: 
+    css: 
+    js: 
+  
+  # Wildfire comments system
+  # https://github.com/cheng-kang/wildfire/
+  # Version: 0.3.9
+  wildfire: 
+  
+  # Twikoo
+  # https://github.com/imaegoo/twikoo
+  # Version 0.3.2
+  twikoo: 
+
+  # MathJax
+  # https://www.mathjax.org/
+  # Version: 3
+  mathjax: 
+
+  # KaTeX
+  # https://katex.org/
+  # Version 0.12.0
+  katex: 
+    css: 
+    js: 
+
+  # busuanzi counter js
+  # https://busuanzi.ibruce.info
+  busuanzi: 
+
+  # Artitalk js
+  # https://github.com/ArtitalkJS/Artitalk
+  # Version: 3.1.2
+  artitalk: 
+
+  
+  # jQuery js
+  # https://github.com/jquery/jquery/
+  # Version: 3.4.1
+  jquery: 
+  
+  # fancybox css
+  # https://github.com/fancyapps/fancybox/
+  # Version: 3.5.7
+  fancybox: 
+    css: 
+    js: 
+
+  # 自定义 script
+  custom_script: 
+    # - ''
+    # - ''
+
+

@@ -1,0 +1,41 @@
+<%- partial('./header', null, {cache: false, path: path}) %>
+<% if (page.cover !== false) { %>
+    <div class="cover">
+        <div class="cover__logo">
+            <!-- <% if (theme.cover.avatar) { %>
+                <img no-lazy alt="author Image" class="cover__avatar" src="<%= url_for(theme.cover.avatar) %>">
+            <% } else if (theme.cover.sitename) { %>
+                <h1><%= theme.cover.sitename %></h1>
+            <% } else if (config.title) { %>
+                <h1><%= config.title %></h1>
+            <% } %> -->
+            <img no-lazy="" alt="author Image" class="cover__avatar" src="https://z3.ax1x.com/2021/04/05/cMwSvn.jpg">
+        </div>
+        
+        <% if (theme.cover.description) { %>
+            <!-- <div class="cover__intro">
+                <%- markdown(theme.cover.description) %> 
+            </div> -->
+            <p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p>
+            <!-- <p href="#" id="hitokoto_text"></p> -->
+            <script>
+                fetch('https://v1.hitokoto.cn/?c=d')
+                  .then(response => response.json())
+                  .then(data => {
+                    const hitokoto = document.getElementById('hitokoto_text')
+                    hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+                    hitokoto.innerText = data.hitokoto
+                  })
+                  .catch(console.error)
+              </script>
+        <% } %>
+        <div class="tig1">
+            <a href="/" class="iconfont icon-shouye"></a>
+            <a href="/archives" class="iconfont icon-guidang"></a>
+            <a href="/about" class="iconfont icon-wode"></a>  
+            <a href="/artitalk" class="iconfont icon-feichuan2"></a>
+            <a href="http://tiangou.xiaoxiongzai.fun" class="iconfont icon-chongwutubiao24
+            "></a>
+        </div>
+    </div>
+<% } %>
